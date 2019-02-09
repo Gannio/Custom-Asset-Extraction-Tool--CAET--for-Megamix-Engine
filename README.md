@@ -7,3 +7,5 @@ Currently, asset collection is based on nomenclature specified for MaGMML3 (e.g.
 First, browse for the project file of the project holding your assets. This will let the program know to start from that directory.
 Next, type your username in the Username text box.
 Finally, click Output! to choose a place to save your file. When choosing where to save, it will look like the file you are saving is an actual file rather than a folder, because Visual Studio's normal folder option uses the uglier folder tree, which would make navigation much slower overall. The name of this 'file' will be the name of the outputted folder.
+
+NOTE: The program currently seems to have trouble grabbing source assets with Username values that provide an underscore. For Neo Pit of Pits Submissions, use the username 'Pit' alone to grab your assets.
