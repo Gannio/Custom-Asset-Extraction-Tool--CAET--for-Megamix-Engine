@@ -6,3 +6,11 @@ C:\My Stuff\MAGMML3\Custom Asset Extractor\Gannio CAET\CAET\CAET\obj\Release\CAE
 C:\My Stuff\MAGMML3\Custom Asset Extractor\Gannio CAET\CAET\CAET\obj\Release\CAET.csproj.GenerateResource.Cache
 C:\My Stuff\MAGMML3\Custom Asset Extractor\Gannio CAET\CAET\CAET\obj\Release\CAET.exe
 C:\My Stuff\MAGMML3\Custom Asset Extractor\Gannio CAET\CAET\CAET\obj\Release\CAET.pdb
+C:\Users\Gannio\Custom-Asset-Extraction-Tool--CAET--for-Megamix-Engine\bin\Release\CAET.exe.config
+C:\Users\Gannio\Custom-Asset-Extraction-Tool--CAET--for-Megamix-Engine\obj\Release\CAET.exe
+C:\Users\Gannio\Custom-Asset-Extraction-Tool--CAET--for-Megamix-Engine\obj\Release\CAET.pdb
+C:\Users\Gannio\Custom-Asset-Extraction-Tool--CAET--for-Megamix-Engine\bin\Release\CAET.exe
+C:\Users\Gannio\Custom-Asset-Extraction-Tool--CAET--for-Megamix-Engine\bin\Release\CAET.pdb
+C:\Users\Gannio\Custom-Asset-Extraction-Tool--CAET--for-Megamix-Engine\obj\Release\CAET.Form1.resources
+C:\Users\Gannio\Custom-Asset-Extraction-Tool--CAET--for-Megamix-Engine\obj\Release\CAET.Properties.Resources.resources
+C:\Users\Gannio\Custom-Asset-Extraction-Tool--CAET--for-Megamix-Engine\obj\Release\CAET.csproj.GenerateResource.Cache

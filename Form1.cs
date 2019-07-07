@@ -36,48 +36,51 @@ namespace CAET
             saveFileDialogOutput.ShowDialog();
         }
 
-
+        //string log = "";
 
         void DirSearch(string sDir, string OGDir) //Derived and slightly modified from here: https://support.microsoft.com/en-us/help/303974/how-to-recursively-search-directories-by-using-visual-c
         {
+            //MessageBox.Show(sDir);
             try
             {
+
                 //string[] coll = Directory.GetDirectories(sDir);
-                foreach (string d in Directory.GetDirectories(sDir))
+                foreach (string d in Directory.GetDirectories(sDir))//All directories.
                 {
-                    foreach (string f in Directory.GetFiles(d))
+                    //log += d + "\n";
+                    foreach (string f in Directory.GetFiles(d))//All items in directory.
                     {
                         string smallName = f.Replace(d + "\\", "");
+                        //log += smallName + "\n";
                         string[] prefixes = {"lvl","rm","obj","sfx","spr","msk","bg","tst", "scr", "mus"};
                         for (int i = 0; i < prefixes.Length; i++)
                         {
 
                             if (smallName.Substring(0, prefixes[i].Length) == prefixes[i])
                             {
-                                //MessageBox.Show(smallName.Substring(0, prefixes[i].Length));
-                                if (smallName.Substring(prefixes[i].Length, username.Length) == username)
+                                if (smallName.Contains(prefixes[i] + username + "_"))//Fix for bug here. Not 100% foolproof but at least 80% I'd say --->smallName.Substring(prefixes[i].Length, username.Length) == username)
                                 {
-                                    //MessageBox.Show(f);
                                     string truncatedDirectory = f.Replace(OGDir, "").Replace(smallName,"");
-                                    //MessageBox.Show(truncatedDirectory);
                                     string combine = pathOutput + "\\" + truncatedDirectory;
                                     if (!Directory.Exists(combine))
                                     {
                                         Directory.CreateDirectory(combine);
 
-                                        //MessageBox.Show(pathOutput + "\\" + truncatedDirectory);
                                     }
                                     File.Copy(f, combine + smallName);
-                                    //MessageBox.Show(smallName.Substring(i, username.Length));
                                 }
                                 i = 9001;
                             }
                         }
-                        //MessageBox.Show(smallName);//lstFilesFound.Items.Add(f);
-                        //MessageBox.Show(d);
                     }
                     DirSearch(d, OGDir);
                 }
+                /*if (sDir == OGDir) Debuggy
+                {
+                    //MessageBox.Show(log);
+                    //MessageBox.Show(username);
+                    //textBoxUsername.Text = log;
+                }*/
             }
             catch (System.Exception excpt)
             {
@@ -103,7 +106,7 @@ namespace CAET
                 }
             
             }
-            MessageBox.Show(pathInput);
+            //MessageBox.Show(pathInput);
             if (Directory.Exists(pathInput))
             {
                 if (Directory.Exists(outDirCheck))
