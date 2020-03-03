@@ -52,7 +52,7 @@ namespace CAET
                     {
                         string smallName = f.Replace(d + "\\", "");
                         //log += smallName + "\n";
-                        string[] prefixes = {"lvl","rm","obj","sfx","spr","msk","bg","tst", "scr", "mus"};
+                        string[] prefixes = {"lvl","rm","obj","sfx","spr","msk","bg","tst", "scr", "mus", "prt"};
                         for (int i = 0; i < prefixes.Length; i++)
                         {
 
